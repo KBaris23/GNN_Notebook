@@ -1,0 +1,24 @@
+import tensorflow
+import numpy as np
+import pandas as pd
+import os
+import tensorflow.keras as keras
+zip_file=keras.utils.get_file(
+    fname="gamma_angle_position_5deg_xy.h5",
+    origin="https://zenodo.org/record/846388/files/gamma_angle_position_5deg_xy.h5?download=1",
+    extract=True
+
+)
+dirnam=os.path.join(os.path.dirname(zip_file), "gamma_angle_position_5deg_xy.h5")
+
+import h5py
+import matplotlib.pyplot as plt
+def extract_data(n):
+  windows=np.empty((12,12,1))
+  for i in range(n):
+    window = (np.array(h5py.File(zip_file)["layer_1"][i]))
+    #print(window.reshape(1,12,12).shape)
+    #window=window.reshape(1,12,12)
+    windows=np.dstack((windows, window))
+  return windows
+layers_data(5000)
