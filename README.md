@@ -1,7 +1,7 @@
 # GNN_Notebook
 GNN_Optimum_Metric_Analysis_Project
 This project aims to adress a gap in machine learning+particle physics studies. 
-Especially in node classification on multiple particle clusters in "jet" particle showers, distinct particle's paths may not be accurately 
+Especially in node classification on multiple particle clusters in "jet" particle showers, distinct particles' paths may not be accurately 
 found, as there is a dispute on ways to analize relations of particles. Some metrices used in analizing whether a particle detected in a layer is the same particle preceded in the previous layers
 include adjacency and energy metrices. These metrices prioritize the momentum of electromagnetic particles, as a particle with higher momentum would be less susceptible to deviation in a short distance, and look for the most adjacent particle in the succeding layer.
 In some circumstances, however, this method of momentum-adjacency priority may not be so representitive and can be wrong. So, this project aims to adress this issue by proposing that for each layer of calorimeter, as this paper concerns priorly electromagnetic particles, particle cluster relations
