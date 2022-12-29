@@ -1,6 +1,6 @@
 # GNN_Notebook
 GNN_Optimum_Metric_Analysis_Project
-This project is conducted by Mehmet Ozgur Sahin, Saclay University, and Kaan Baris Oktay. This project aims to adress a gap in machine learning+particle physics studies. 
+This project is conducted by Mehmet Ozgur Sahin, Saclay University, and Kaan Baris Oktay. This project aims to adress a gap in machine learning+particle physics studies. Copyrights are preserved for Mehmet Ozgur Sahin.
 Especially in node classification on multiple particle clusters in "jet" particle showers, distinct particles' paths may not be accurately 
 found, as there is a dispute on ways to analize relations of particles. Some metrices used in analizing whether a particle detected in a layer is the same particle preceded in the previous layers
 include adjacency and energy metrices. These metrices prioritize the momentum of electromagnetic particles, as a particle with higher momentum would be less susceptible to deviation in a short distance, and look for the most adjacent particle in the succeding layers.
